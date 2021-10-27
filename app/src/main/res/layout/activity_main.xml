@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_library_add_24"
+        android:id="@+id/icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="350dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Kalimat 1"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:layout_below="@+id/icon"
+        android:id="@+id/kalimat"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:hint="Kalimat 2"
+        android:textSize="26sp"
+        android:layout_below="@+id/kalimat"
+        android:id="@+id/kata"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Toast"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/kata"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit_btn" />
+
+</RelativeLayout>
